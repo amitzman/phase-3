@@ -1,0 +1,8 @@
+<p>Here's all my blog posts</p>
+  <ul>
+    <% @posts.each do |post|%>
+      <li><a href = "posts/<%=post.id%>"><%= post.title%></a></li>
+    <%end%>
+  </ul>
+
+<a href="posts/new">Create a new post</a>
